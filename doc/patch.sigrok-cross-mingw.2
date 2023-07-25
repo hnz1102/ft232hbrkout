@@ -1,0 +1,89 @@
+--- sigrok-cross-mingw.org	2023-07-25 09:07:37.958606579 +0000
++++ sigrok-cross-mingw	2023-07-25 09:11:20.275139653 +0000
+@@ -97,8 +97,8 @@ fi
+ 
+ # Remove build directory contents (if any) and create a new build dir.
+ $ECHO "starting new build directory: $BUILDDIR"
+-rm -rf $BUILDDIR
+-mkdir $BUILDDIR
++#rm -rf $BUILDDIR
++#mkdir $BUILDDIR
+ cd $BUILDDIR
+ 
+ # -----------------------------------------------------------------------------
+@@ -175,7 +175,7 @@ $WGET https://github.com/pbatard/libwdi/
+ 
+ # libserialport
+ $ECHO "component libserialport ..."
+-$GIT_CLONE $REPO_BASE/libserialport
++#$GIT_CLONE $REPO_BASE/libserialport
+ cd libserialport
+ ./autogen.sh
+ ./configure $C $L
+@@ -185,7 +185,7 @@ cd ..
+ 
+ # libsigrok
+ $ECHO "component libsigrok ..."
+-$GIT_CLONE $REPO_BASE/libsigrok
++#$GIT_CLONE $REPO_BASE/libsigrok
+ cd libsigrok
+ ./autogen.sh
+ ./configure $C $L
+@@ -195,7 +195,7 @@ cd ..
+ 
+ # libsigrokdecode
+ $ECHO "component libsigrokdecode ..."
+-$GIT_CLONE $REPO_BASE/libsigrokdecode
++#$GIT_CLONE $REPO_BASE/libsigrokdecode
+ cd libsigrokdecode
+ ./autogen.sh
+ ./configure $C $L
+@@ -205,7 +205,7 @@ cd ..
+ 
+ # sigrok-firmware
+ $ECHO "component sigrok-firmware ..."
+-$GIT_CLONE $REPO_BASE/sigrok-firmware
++#$GIT_CLONE $REPO_BASE/sigrok-firmware
+ cd sigrok-firmware
+ ./autogen.sh
+ # Nothing gets cross-compiled here, we just need 'make install' basically.
+@@ -215,7 +215,7 @@ cd ..
+ 
+ # sigrok-firmware-fx2lafw
+ $ECHO "component sigrok-firmware-fx2lafw ..."
+-$GIT_CLONE $REPO_BASE/sigrok-firmware-fx2lafw
++#$GIT_CLONE $REPO_BASE/sigrok-firmware-fx2lafw
+ cd sigrok-firmware-fx2lafw
+ ./autogen.sh
+ # We're building the fx2lafw firmware on the host, no need to cross-compile.
+@@ -226,14 +226,14 @@ cd ..
+ 
+ # sigrok-dumps
+ $ECHO "component sigrok-dumps ..."
+-$GIT_CLONE $REPO_BASE/sigrok-dumps
++#$GIT_CLONE $REPO_BASE/sigrok-dumps
+ cd sigrok-dumps
+ make install PREFIX=$PREFIX $V
+ cd ..
+ 
+ # sigrok-cli
+ $ECHO "component sigrok-cli ..."
+-$GIT_CLONE $REPO_BASE/sigrok-cli
++#$GIT_CLONE $REPO_BASE/sigrok-cli
+ cd sigrok-cli
+ ./autogen.sh
+ ./configure $C
+@@ -248,10 +248,10 @@ cd ..
+ 
+ # PulseView
+ $ECHO "component pulseview ..."
+-$GIT_CLONE $REPO_BASE/pulseview
++#$GIT_CLONE $REPO_BASE/pulseview
+ cd pulseview
+-patch -p1 < ../../pulseview-boost-numeric-literals.patch
+-patch -p1 < ../../pulseview-manual-pdf-hack.patch
++#patch -p1 < ../../pulseview-boost-numeric-literals.patch
++#patch -p1 < ../../pulseview-manual-pdf-hack.patch
+ cp ../../FileAssociation.nsh contrib
+ $CMAKE \
+ 	-DCMAKE_INSTALL_PREFIX:PATH=$PREFIX \

@@ -1,0 +1,11 @@
+--- build_release_32/libsigrok/src/hardware/ftdi-la/api.c.org	2023-07-25 09:45:11.092578741 +0000
++++ build_release_32/libsigrok/src/hardware/ftdi-la/api.c	2023-07-25 09:45:36.676782311 +0000
+@@ -92,7 +92,7 @@ static const struct ftdi_chip_desc ft232
+ static const struct ftdi_chip_desc ft232h_desc = {
+ 	.vendor = 0x0403,
+ 	.product = 0x6014,
+-	.samplerate_div = 30,
++	.samplerate_div = 20,
+ 	.channel_names = {
+ 		"ADBUS0", "ADBUS1", "ADBUS2", "ADBUS3", "ADBUS4", "ADBUS5", "ADBUS6", "ADBUS7",
+ 		NULL

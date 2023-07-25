@@ -1,0 +1,26 @@
+﻿designator,quantity,value,pack,mpn,mount_type
+"C101, C102, C103, C104, C105, C109, C110, C111, C113, C114, C115, C116, C117",13,0.1uF,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,,smt
+"C106, C108",2,27pF,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,,smt
+"C107, C112",2,10uF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,,smt
+"C118, C119, C120",3,4.7uF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,,smt
+"D101, D102, D103, D104",4,LED RED,LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder,,smt
+FB101,1,BLM18RK102SN1,L_0603_1608Metric_Pad1.05x0.95mm_HandSolder,,smt
+"FB102, FB103",2,BK2125HS601-T,L_0805_2012Metric_Pad1.15x1.40mm_HandSolder,,smt
+J101,1,USB_B_Mini,usb mini B connector c2235 dim 2,,tht
+J102,1,PinHeader 02x02 5V,PinHeader_2x02_P2.54mm_Vertical,,tht
+J105,1,PinHeader 01x16 DOWN-PORT,PinHeader_1x16_P2.54mm_Vertical,,tht
+J107,1,PinHeader 02x02 3.3V,PinHeader_2x02_P2.54mm_Vertical,,tht
+J108,1,PinHeader_01x03_vertical_2.54mm,PinHeader_1x03_P2.54mm_Vertical,,tht
+"R101, R103, R104, R109, R112",5,10K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,,smt
+"R102, R111",2,12K 1%,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,,smt
+"R105, R106",2,0R,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,,smt
+R107,1,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,,smt
+R108,1,2K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,,smt
+R110,1,20K 1%,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,,smt
+"R113, R115",2,220,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,,smt
+R114,1,330,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,,smt
+SW101,1,TS-06104,TS-06104,,smt
+U101,1,93LCxxBxxOT,SOT-23-6,,smt
+U102,1,FT232HL,LQFP-48_7x7mm_P0.5mm,,smt
+U103,1,SPX3819M5-L,SOT-23-5,,smt
+Y101,1,Crystal 12MHz,Crystal_SMD_HC49-SD,,smt
