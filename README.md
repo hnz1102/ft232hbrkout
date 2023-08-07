@@ -102,3 +102,5 @@ sigrok-util/cross-compile/mingw/build_release_32/pulseview/contrib/pulseview-0.5
 Hardware Schematic documents are licensed under CC-BY-SA V4.0.
 
 PulseView(sigrok) Software is GNU GPL, version 3 or later. Please refer to [this](https://sigrok.org/wiki/PulseView)
+
+i2c-test directory codes are MIT.
