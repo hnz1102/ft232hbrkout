@@ -15,7 +15,7 @@ and
 
 You can use it with [PulseView](https://sigrok.org/wiki/PulseView) (Qt based logic analyzer).
 
-Pulseview with this board can capture digital level from D0 - D7 port. But **Show Cursors** function shows time difference is not wrong. To correct this function, You need to rebuild PulseView Tools on Linux.
+Pulseview with this board can capture digital level from D0 - D7 port. But **Show Cursors** function shows time difference is wrong value. To correct this function, You need to rebuild PulseView Tools on Linux.
 
 # Build PulseView For Linux
 ```bash
